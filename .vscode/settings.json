@@ -1,0 +1,10 @@
+{
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "@ionic/angular/common",
+    "@ionic/angular/directives",
+    "@ionic/angular/index.d.ts",
+    "@ionic/angular/providers"
+  ],
+  "cmake.sourceDirectory": "C:/Users/user/Desktop/Alejandro/Curso/03-pokedex-app/node_modules/bare-fs",
+  "idf.currentSetup": "C:\\Users\\user\\esp\\v5.5.1\\esp-idf"
+}
