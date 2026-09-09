@@ -2,8 +2,8 @@ import { Component, inject } from '@angular/core';
 import { CommonModule, JsonPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { IonContent, IonHeader, IonTitle, IonToolbar, LoadingController, IonGrid, IonRow,
-   IonCol, IonImg, IonText, IonInfiniteScroll, IonInfiniteScrollContent, InfiniteScrollCustomEvent } from '@ionic/angular/standalone';
+import { IonContent, IonHeader, LoadingController, IonGrid, IonRow, IonCol, IonImg, IonText,
+   IonInfiniteScroll, IonInfiniteScrollContent, InfiniteScrollCustomEvent } from '@ionic/angular/standalone';
 
 import { PokemonService } from '../../services/pokemon';
 import { IPokemon } from 'src/app/models/pokemon.model';
@@ -12,8 +12,8 @@ import { IPokemon } from 'src/app/models/pokemon.model';
   templateUrl: './list-pokemons.page.html',
   styleUrls: ['./list-pokemons.page.scss'],
   standalone: true,
-  imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule, 
-    JsonPipe, IonGrid, IonRow, IonCol, IonImg, IonText, IonInfiniteScroll, IonInfiniteScrollContent ]
+  imports: [IonContent, IonHeader, CommonModule, FormsModule,
+     IonGrid, IonRow, IonCol, IonImg, IonText, IonInfiniteScroll, IonInfiniteScrollContent ]
 })
 export class ListPokemonsPage  {
 

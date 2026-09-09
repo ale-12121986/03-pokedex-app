@@ -52,6 +52,14 @@ export class PokemonService {
   return null;  
  }
 
+ getPokemonById(id:number){
+  const option = {
+    url:`${this.URL_BASE}/${id}`,
+    params:{}
+  }
+  return CapacitorHttp.get(option).then((response: HttpResponse) => this.processPokemon(response.data));
+ }
+
   private processPokemon(pokemonData: any){
     const pokemon: IPokemon = {
       id: pokemonData.id,

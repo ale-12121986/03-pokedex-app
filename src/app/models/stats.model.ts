@@ -1,5 +1,5 @@
 export interface IStat {
-    base_stats: number;
+    base_stat: number;
     name: string;
 
 }
