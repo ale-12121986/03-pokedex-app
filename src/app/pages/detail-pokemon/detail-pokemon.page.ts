@@ -3,7 +3,7 @@ import { CommonModule, JsonPipe } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, LoadingController,IonFab, IonFabButton, IonIcon, IonImg, IonCard,
    IonCardHeader, IonCardTitle, IonCardContent,
-   IonRow, IonCol, IonText} from '@ionic/angular/standalone';
+   IonRow, IonCol, IonText, IonGrid} from '@ionic/angular/standalone';
 import { PokemonService } from 'src/app/services/pokemon';
 import { IPokemon } from 'src/app/models/pokemon.model';
 import { addIcons } from 'ionicons';
@@ -15,7 +15,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./detail-pokemon.page.scss'],
   standalone: true,
   imports: [IonContent, IonFab, IonFabButton, IonIcon, IonImg,
-     IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonRow, IonCol, IonText]
+     IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonRow, IonCol, IonText, IonGrid]
 })
 export class DetailPokemonPage  {
 
