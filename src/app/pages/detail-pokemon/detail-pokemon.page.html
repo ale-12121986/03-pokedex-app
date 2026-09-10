@@ -1,4 +1,53 @@
 <ion-content [fullscreen]="true">
 
-<pre>{{ pokemon | json }}</pre>
+    @if(pokemon){
+        <ion-img [src] = "pokemon.sprite"/>
+
+        <ion-card>
+            
+                <ion-card-header class = "ion-text-capitalize">
+                    <ion-card-title>{{pokemon.name}}</ion-card-title>
+                </ion-card-header>
+
+            <ion-card-content>
+                <ion-row class = "ion-align-items-center">
+                    <ion-col>
+                        <ion-text>tipo</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-img class = "ion-padding-start ion-padding-end" [src] ="'assets/img/' + pokemon.type1 + '.gif' "/>
+                    </ion-col>
+                    
+                    <ion-col>
+                        @if(pokemon.type2){
+                            <ion-img class = "ion-padding-start ion-padding-end" [src] ="'assets/img/' + pokemon.type2 + '.gif' "/>    
+                        }
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <ion-text>Peso</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text>{{pokemon.weight}} Kg</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text>Altura</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text>{{pokemon.height}} m</ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
+
+    }
+
+  <ion-fab slot="fixed" vertical="top" horizontal="end">
+    <ion-fab-button (click) = "goBack()">
+      <ion-icon name="close-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
 </ion-content>
