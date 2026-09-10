@@ -41,6 +41,44 @@
                 </ion-row>
             </ion-card-content>
         </ion-card>
+        <ion-card>
+            
+                <ion-card-header class = "ion-text-capitalize">
+                    <ion-card-title>Habilidades</ion-card-title>
+                </ion-card-header>
+
+            <ion-card-content>
+                <ion-row class = "ion-align-items-center">
+                    <ion-col size="5">
+                        <ion-text>Principal</ion-text>                        
+                    </ion-col>
+                    <ion-col size="7" class=" ion-text-end">
+                        @for(hability of pokemon.abilities; track hability){
+                            <ion-text>
+                            <div>{{hability}}</div>    
+                            </ion-text>
+                        }
+                        
+
+                    </ion-col>
+                </ion-row>
+
+                <ion-row>
+                    <ion-col>
+                        <ion-text>Peso</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text>{{pokemon.weight}} Kg</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text>Altura</ion-text>
+                    </ion-col>
+                    <ion-col>
+                        <ion-text>{{pokemon.height}} m</ion-text>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
 
     }
 
