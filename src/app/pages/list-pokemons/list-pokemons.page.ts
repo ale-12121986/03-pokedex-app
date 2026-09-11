@@ -55,6 +55,8 @@ export class ListPokemonsPage  {
         loading?.dismiss();
         event?.target.complete(); 
       });
+    }else{
+      event?.target.complete();
     }
   }
 
